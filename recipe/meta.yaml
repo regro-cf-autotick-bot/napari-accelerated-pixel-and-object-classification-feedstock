@@ -20,10 +20,10 @@ requirements:
     - python >=3.8
     - setuptools-scm
   run:
-    - apoc-backend >=0.8.1
+    - apoc-backend >=0.9.0
     - napari-plugin-engine >=0.1.4
     - napari-time-slicer
-    - napari-tools-menu >=0.1.16
+    - napari-tools-menu >=0.1.17
     - numpy
     - python >=3.7
     - superqt
