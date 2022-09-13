@@ -1,5 +1,5 @@
 {% set name = "napari-accelerated-pixel-and-object-classification" %}
-{% set version = "0.9.0" %}
+{% set version = "0.10.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/napari-accelerated-pixel-and-object-classification-{{ version }}.tar.gz
-  sha256: 563bee80ede325b935f80ed8ae627cc9e415eb8044213c27e58bd939dc380a55
+  sha256: a45cb95f1955820713052e63706805ef54e38bbbaa862cac31e873a189ff44d1
 
 build:
   noarch: python
@@ -20,7 +20,7 @@ requirements:
     - python >=3.8
     - setuptools-scm
   run:
-    - apoc-backend >=0.9.0
+    - apoc-backend >=0.10.0
     - napari-plugin-engine >=0.1.4
     - napari-time-slicer
     - napari-tools-menu >=0.1.17
