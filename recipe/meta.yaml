@@ -1,5 +1,5 @@
 {% set name = "napari-accelerated-pixel-and-object-classification" %}
-{% set version = "0.12.1" %}
+{% set version = "0.12.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/napari-accelerated-pixel-and-object-classification-{{ version }}.tar.gz
-  sha256: 0ea13da8cd14b30d1b804aa1044d37bf1d23b0b05553f493b7b7d5d3b149dbb8
+  sha256: 4f1a9a2e93741f38e6993339b1ff27d4cbd82fa800b1eb3787c033b226e2136a
 
 build:
   noarch: python
