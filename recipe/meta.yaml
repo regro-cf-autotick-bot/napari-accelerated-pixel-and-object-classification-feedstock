@@ -21,28 +21,33 @@ requirements:
     - setuptools-scm
   run:
     - apoc-backend >=0.12.0
+    - magicgui
+    - napari >=0.4.11
     - napari-plugin-engine >=0.1.4
     - napari-time-slicer
     - napari-tools-menu >=0.1.17
     - numpy
+    - pandas
+    - pyopencl
     - python >=3.7
+    - qtpy
     - superqt
-    - napari >=0.4.11
 
 test:
   imports:
     - napari_accelerated_pixel_and_object_classification
   commands:
     - pip list
-    # - pip check
+    - pip check
   requires:
     - pip
 
 about:
-  home: https://github.com/haesleinhuepf/napari-accelerated-pixel-and-object-classification
+  home: https://pypi.org/project/napari-accelerated-pixel-and-object-classification
   summary: Pixel and label classification using OpenCL-based Random Forest Classifiers
   license: BSD-3-Clause
   license_file: LICENSE
+  dev_url: https://github.com/haesleinhuepf/napari-accelerated-pixel-and-object-classification
 
 extra:
   recipe-maintainers:
