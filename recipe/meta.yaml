@@ -32,6 +32,7 @@ requirements:
     - python >=3.7
     - qtpy
     - superqt
+    - napari-assistant >= 0.4.7
 
 test:
   imports:
