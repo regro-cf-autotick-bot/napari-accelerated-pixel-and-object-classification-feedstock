@@ -3,11 +3,13 @@ About napari-accelerated-pixel-and-object-classification-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/napari-accelerated-pixel-and-object-classification-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/haesleinhuepf/napari-accelerated-pixel-and-object-classification
+Home: https://pypi.org/project/napari-accelerated-pixel-and-object-classification
 
 Package license: BSD-3-Clause
 
 Summary: Pixel and label classification using OpenCL-based Random Forest Classifiers
+
+Development: https://github.com/haesleinhuepf/napari-accelerated-pixel-and-object-classification
 
 Current build status
 ====================
