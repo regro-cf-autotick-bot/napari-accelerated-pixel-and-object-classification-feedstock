@@ -33,6 +33,8 @@ requirements:
     - qtpy
     - superqt
     - napari-assistant >=0.4.7
+    - jupytext
+    - jupyter
 
 test:
   imports:
