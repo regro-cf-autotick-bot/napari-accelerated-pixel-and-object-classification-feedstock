@@ -6,18 +6,18 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/napari-accelerated-pixel-and-object-classification-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/napari-accelerated-pixel-and-object-classification-{{ version }}.tar.gz
   sha256: 2f626a9c2d671bf32cade62df74666eef328e6dc3f6d7f3ab6091a992131fb5c
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
     - pip
-    - python >=3.8
+    - python {{ python_min }}
     - setuptools-scm
   run:
     - apoc-backend >=0.12.0
@@ -29,7 +29,7 @@ requirements:
     - numpy
     - pandas
     - pyopencl
-    - python >=3.7
+    - python >={{ python_min }}
     - qtpy
     - superqt
     - napari-assistant >=0.4.7
@@ -45,6 +45,7 @@ test:
   requires:
     - pip
     - pyqt
+    - python {{ python_min }}
 
 about:
   home: https://pypi.org/project/napari-accelerated-pixel-and-object-classification
